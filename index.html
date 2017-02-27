@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <lang="en-Us"></lang>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Holiday Budget</title>
+<link rel="icon" href="Holiday-logo.png"  type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://use.fontawesome.com/840ab66c9d.js"></script>
+<link href="main.css" rel="stylesheet">
+<link href="mediaquery.css" rel="stylesheet">
+<link href="keyframes.css" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body onchange="show_val()">
+   <div class="container">
+        
+     <aside class="aside ">
+           
+       <div class="unu animated bounceInLeft" ><a href="Ibiza/index.html">
+         <img src="images/Ibiza1-compressor.jpg" id="divunu-unu"/>
+         <img src="images/Ibiza2-compressor.jpg" id="divunu-doi"/>
+         <div class="text">Ibiza</div></a>
+       </div>
+           
+       <div class="doi animated bounceInLeft1 "><a href="Oslo/index.html">
+          <img src="images/Oslo1-compressor.jpg" id="divdoi-unu"/>
+          <img src="images/Oslo2-compressor.jpg" id="divdoi-doi"/>
+          <div class="text">Oslo</div></a>
+       </div>
+           
+         
+       <div class="trei  animated bounceInLeft2 "><a href="Barcelona/index.html">
+         <img src="images/Barcelona1-compressor.jpg" id="divtrei-unu"/>
+         <img src="images/Barcelona2-compressor.jpg" id="divtrei-doi"/>
+          <div class="text">Barcelona</div></a>
+       </div>
+           
+        
+       <div class="patru  animated bounceInLeft3"><a href="Prague/index.html">
+         <img src="images/Prague1-compressor.jpg" id="divpatru-unu"/>
+         <img src="images/Prague2-compressor.jpg" id="divpatru-doi"/>
+         <div class="text">Prague</div> </a>
+           
+       </div>
+       </aside>
+       <!---------------------Center------------------> 
+       
+<section class="section animated bounceInDown ">
+    <div class="header">
+    <h1> Holiday Budget Simulator</h1>
+        <p>Select one destination and how would you like to spend your money to calculate an average budget you would need.</p>
+    </div> 
+    
+    <div class="main-container">
+        <div class="dest-misc">
+           <div class="destinations">
+    <form class="dest">
+    <label for="destinations"> <i class="fa fa-plane"></i> Destination</label>
+    <select name="destinations" id="mySelect"autofocus onchange="destination_sl()" >
+        <option value="Ibiza" id ="A">Ibiza</option>
+        <option value="Oslo" selected id="B">Oslo</option>
+        <option value="Barcelona" id="C">Barcelona</option>
+        <option value="Prague" id="D">Prague</option>
+        <option value="Venice" id ="E">Venice</option>
+        <option value="Berlin" selected id="F">Berlin</option>
+        <option value="Vienna" id="G">Vienna</option>
+        <option value="Rome" id="H">Rome</option>
+    </select>
+         <h2 id="result1">0</h2><br>
+    </form>
+          </div>
+          
+            
+    <div class="miscell">
+      <form class="Miscell">
+      <label for="miscellaneous"> <i class="fa fa-shopping-bag"></i> Miscellaneous</label>
+        <input type="text" name="miscellaneous" id="miscellaneous">
+      </form>  
+      </div>
+              
+    <div class="miscell">
+        <form class="Miscell">
+        <label for="meals"><i class="fa fa-cutlery"></i> Meals</label>
+        <input type="text" name="meals" id="meals">
+        </form>  
+    </div>
+            
+            
+       </div>
+        
+        
+   <div class="spendings">
+     <div class="accommodation">
+       <form class="acc">
+         <label for="acc"><i class="fa fa-hotel"></i> 7 Nights </label><br><br>
+         <input type="radio"   id="first" name="acom" class="style_elem"/>5 star- HOTEL  <br>
+         <input type="radio"  id="second" name="acom" class="style_elem"/>4 star- HOTEL <br>
+        <input type="radio"   id="third" name="acom" class="style_elem"/>3 star- HOTEL 
+       </form>
+         <h3 id="result">0</h3>
+     </div>
+          
+          
+     <div class="transfer">
+         <label for="transf"><i class="fa fa-car"></i> Airport transfers</label><br><br>
+         <form class="transf" onchange="transfer()" >
+         <input type="radio" id="bus" name="transport" value="10">Bus 
+         <input type="radio" id="train" name="transport" value="40">Train 
+         <input type="radio" id="taxi" name="transport" value="100">Taxi 
+          </form>
+            <h2 id="result2">0</h2><br>
+      </div>              
+    </div>
+        
+    </div>
+    <div class="total">
+      <div class="button">
+        <button type="button" id="btn-total" onclick="make_sum()" >Total</button>
+      </div>
+     <p id="cost" ></p>	
+        
+    </div>
+</section>  
+        
+        
+      <!--------------------------Aside2 ------------->  
+       <aside class="aside2">
+         
+           <div class="unu2 animated bounceInRight"><a href="Venice/index.html">
+             <img src="images/Venice1-compressor.jpg" id="divunu-unu-right"/>
+             <img src="images/Venice2-compressor.jpg" id="divunu-doi-right"/>
+             <div class="text">Venice</div></a>
+           </div> 
+           
+          <div class="doi2 animated bounceInRight1"><a href="Berlin/index.html">
+             <img src="images/Berlin1-compressor.jpg" id="divdoi-unu-right"/>
+             <img src="images/Berlin2-compressor.jpg" id="divdoi-doi-right"/>
+             <div class="text">Berlin</div></a>
+           </div> 
+           
+          <div class="trei2 animated bounceInRight2"><a href="Vienna/index.html">
+             <img src="images/Viena1-compressor.jpg" id="divtrei-unu-right"/>
+             <img src="images/Viena2-compressor.jpg" id="divtrei-doi-right"/>
+             <div class="text">Vienna</div></a>
+           </div>
+           
+          <div class="patru2 animated bounceInRight3"><a href="Rome/index.html">
+             <img src="images/Rome1-compressor.jpg" id="divpatru-unu-right"/>
+             <img src="images/Rome2-compressor.jpg" id="divpatru-doi-right"/>
+             <div class="text">Rome</div></a>
+           </div>
+       </aside>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,410 @@
+@media screen and (max-width: 680px) {
+    body{
+        background-color: bisque;
+    }
+    *{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+   
+   }
+
+h1,h2,h3,h4,h5,p,aside,article,section{
+    font-family: 'Raleway', sans-serif;
+    font-size:25px;
+    color:light #3d3d29;
+}
+
+.container{
+    width:98%;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding:0;
+}
+
+/*--------------------------------------
+Left section
+-------------------------------------------*/
+.aside{
+        width:95%;
+        height:300px;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        margin-top: 10px;
+        justify-content: space-around;
+}
+.aside a,.aside2 a{
+    text-decoration: none;
+}
+.unu,.doi,.trei,.patru{
+    width:48%;
+    height:auto;
+    position: relative;
+    justify-content: space-around;
+    display:flex;
+    background-color: white;
+     border-radius: 5px 5px;
+     box-shadow: 0px 0px 5px black;
+    flex-direction: column;
+}
+   .unu, .doi, .trei, .patru{
+        margin-top:10px;
+    }
+    
+.description{
+    font-size:15px;
+    font-weight: bold;
+    text-align:center;
+    cursor:pointer;
+    word-spacing: 200px;
+    align-items: center;
+ }
+
+
+.unu img, .doi img, .trei img, .patru img,.unu2 img, .doi2 img, .trei2 img, .patru2 img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+.text {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 12px;
+  width: 100%;
+  height:100%;
+  border-radius: 5px 5px;
+  text-align: center;
+  background-color:gray;
+  opacity: 0;
+  text-transform: uppercase;
+}
+.text:hover{
+    opacity: 0.6;
+    transition: all 0.5s ease;
+    }
+/*-------------------------------------
+Right-section
+--------------------------------------*/
+.aside2{
+    width:95%;
+    height:300px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.unu2,.doi2,.trei2,.patru2{  
+    width:48%;
+    height:auto;
+    position: relative;
+    justify-content: space-around;
+    display:flex;
+    background-color: white;
+     border-radius: 5px 5px;
+     box-shadow: 0px 0px 5px black;
+    flex-direction: column;
+} 
+    
+    .unu2,.doi2,.trei2,.patru2{
+        height:150px;
+    }
+
+   
+    .unu2,.doi2,.trei2,.patru2{
+        margin-top:1px;
+    }
+     .trei2,.patru2{
+        margin-top:10px;
+    }
+/* ----------------------------------
+center section 
+-------------------------------------*/
+.section{
+    border:2px solid black;
+    width:95%;
+    height:90%;
+    margin-top: 10px;
+    display:flex;
+    align-self:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 5px 5px;
+    background-color:#e6f0ff;
+   -webkit-box-shadow: inset 0px 1px 36px 12px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 1px 36px 12px rgba(0,0,0,0.75);
+box-shadow: inset 0px 1px 36px 12px rgba(0,0,0,0.75);
+    
+}
+.one{
+ opacity:0;
+    transition:all 1.5s ease;
+}
+.one1{
+        transition:all 1.5s ease;
+}
+.delay1{
+    transition-delay: 2s;
+}
+.delay2{
+    transition-delay: 4s;
+}
+
+
+/*---------Header------------*/
+.header{
+    border:;
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-bottom:0px;
+}
+.header h1{
+     font-family: 'Roboto Mono', monospace;
+     font-size: 20px;
+    }
+.header p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+
+/*-------------------------
+Middle--------------------*/
+
+
+.main-container{
+    border:;
+    width:100%;
+    height:40%;
+    display:flex;
+    flex-direction:row;
+}
+
+
+/*--------inputs--------*/
+
+.dest-misc{
+    border:;
+    width:40%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.destinations{
+    width: 80%;
+    height:40%;
+    margin-left:20px;
+}
+.miscell{
+     width: 80%;
+    height:auto; 
+     margin-left:20px;
+    margin-top:70px;
+}
+#miscellaneous{
+    border-radius:4px 4px;
+    margin-left: 5px;
+    height:20px;
+    width:50px;
+}
+#meals{
+    border-radius:4px 4px;
+    margin-left: 5px;
+    height:20px;
+    width:50px;
+}
+
+label{
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.spendings{
+    border: ;
+    width: 60%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accommodation{
+    width: 40%;
+    height:auto;
+    margin-left:50px;
+    }
+.acc{
+    font-size: 13px;
+     width:70%;
+    
+}
+.transfer{
+    width:70%;
+    height:auto;
+    margin-left:50px;
+    font-size: 13px;
+    margin-top:85px;
+}
+#result, #result2,#result1{
+     font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*----------------------------------------
+Total------------------------------------*/
+
+.total{
+    border:;
+    width:100%;
+    height:30%;
+    display:flex;
+    flex-direction: column;
+  }
+#btn-total{
+    width:60px;
+    height:30px;
+    color:black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    background: -moz-linear-gradient(top, #d2ebf7 0%, #a0bed6 50%, #7db9e8 100%); 
+    background: -webkit-linear-gradient(top, #d2ebf7 0%,#a0bed6 50%,#7db9e8 100%); /
+    background: linear-gradient(to bottom, #d2ebf7 0%,#a0bed6 50%,#7db9e8 100%); 
+}
+#cost{
+    margin-left:25px;
+    font-family: 'Roboto Mono', monospace;
+}  
+    
+
+h1,h2,h3,h4,h5,p,aside,article,section{
+    font-family: 'Raleway', sans-serif;
+    font-size:16px;
+    color:light #3d3d29;
+}
+
+body {
+   background:  url('Ibiza1.jpg') no-repeat;
+    background-size: cover;
+}
+
+#polina { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: rgba(255,255,255,0.8);
+  padding: 0.6rem;
+  width: 270px;
+  margin:0.3rem;
+  float: left;
+  line-height: 1.5rem
+}
+h1 {
+  font-size: 1rem;
+  margin-top: 0;
+  letter-spacing: .2rem;
+}
+#polina p{
+    text-indent: 20px;
+}
+.first-word{
+    font-size:1rem;
+    text-transform: uppercase;
+}
+a {
+  display: inline-block;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  
+  padding: .5rem;
+  transition: .6s background; 
+  text-decoration: none;
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+    
+}
+    #bgvid{
+    background-image: url(Ibiza/Ibiza1.jpg);}
+
+}
+
+
+@media screen and (max-width: 390px) {
+ 
+    .transfer{
+    width:70%;
+    height:100%;
+    margin-left:50px;
+    font-size: 10px;
+}
+    .acc{
+    font-size: 10px;
+}
+    h1,h2,h3,h4,h5,p,aside,article,section{
+    font-family: 'Raleway', sans-serif;
+    font-size:15px;
+    color:light #3d3d29;
+}
+
+body {
+   background:  url('Ibiza1.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+#polina { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: rgba(255,255,255,0.8);
+  padding: 0.4rem;
+  width: 270px;
+  margin:0.3rem;
+  float: left;
+  line-height: 1.2rem
+}
+h1 {
+  font-size: 1rem;
+  margin-top: 0;
+  letter-spacing: .2rem;
+}
+#polina p{
+    text-indent: 15px;
+}
+.first-word{
+    font-size:0.9rem;
+    text-transform: uppercase;
+}
+a {
+  display: inline-block;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  padding: .5rem;
+  transition: .6s background; 
+  text-decoration: none;
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+    
+}
+    
+}
